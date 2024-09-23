@@ -37,7 +37,7 @@ console.log(areaOfCircle(10));
 // interfaces in typescript
 interface Employee {
     name: string;
-    role?: string; // ? denotes that it is optional when creating an object
+    role?: string; // ? denotes that it is optional to intialise this property while creating an object
     age: number; 
     getDetails():string
 }
