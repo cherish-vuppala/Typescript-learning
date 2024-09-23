@@ -33,3 +33,22 @@ let areaOfCircle = (radius: number): number => {
 };
 
 console.log(areaOfCircle(10));
+
+// interfaces in typescript
+interface Employee {
+    name: string;
+    role?: string;
+    age: number; // ? denotes that it is optional when creating an object
+    getDetails():string
+}
+
+const emp: Employee = {
+  name: "Cherish",
+  age: 22,
+  getDetails(): string {
+    return `Name: ${this.name}, Age: ${this.age}`;
+  },
+};
+
+console.log(emp);
+
